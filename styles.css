@@ -132,3 +132,9 @@ body, html {
     background-color: #32746D; /* Color de fondo al pasar el mouse */
     color: white;
 }
+
+.circular-img {
+    width: 75px;
+    height: 75px; /* Asegúrate de que el alto y ancho sean iguales */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+}
