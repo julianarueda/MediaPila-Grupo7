@@ -1,0 +1,134 @@
+* {
+    margin: 0px auto;
+}
+
+.navbar li a:hover {
+    background-color: rgb(241, 15, 121);
+}
+.navbar li a {
+    color: black;
+}
+
+.interests-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.interest {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.interest.active {
+    background-color: #FF6B6B;
+}
+
+footer {
+    background-color: transparent;
+    color: black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 20px 0;
+    position: relative;
+    text-align: center;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    width: 100%;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+}
+  
+.container p {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p {
+    font-family: "Protest Riot", sans-serif;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .footer-links a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-icono {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+
+
+  
+.footer-links li a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-links li a:hover {
+    color: rgb(241, 15, 121); /* Cambiar color al pasar el mouse sobre el enlace */
+}
+
+.iniciar-sesion-btn {
+    background-color: #FF0065; /* Cambia el color de fondo */
+    border: none; /* Elimina el borde */
+    color: black; /* Cambia el color del texto */
+    font-size: 1.2rem; /* Cambia el tamaño de la fuente */
+    border-radius: 8px; /* Añade bordes redondeados */
+    padding: 10px 20px; /* Añade padding */
+    transition: background-color 0.3s; /* Añade una transición suave */
+}
+.iniciar-sesion-btn:hover {
+    background-color: #D41072; /* Color de fondo al pasar el mouse */
+    color: white;
+}
+.registrame-btn {
+    background-color: #82EDE1; /* Cambia el color de fondo */
+    border: none; /* Elimina el borde */
+    color: black; /* Cambia el color del texto */
+    font-size: 1.2rem; /* Cambia el tamaño de la fuente */
+    border-radius: 8px; /* Añade bordes redondeados */
+    padding: 10px 20px; /* Añade padding */
+    transition: background-color 0.3s; /* Añade una transición suave */
+}
+.registrame-btn:hover {
+    background-color: #32746D; /* Color de fondo al pasar el mouse */
+    color: white;
+}
