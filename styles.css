@@ -3,10 +3,10 @@
 }
 
 .navbar li a:hover {
-    background-color: rgb(241, 15, 121);
+    background-color: black;
 }
 .navbar li a {
-    color: black;
+    color: white;
 }
 
 .interests-container {
@@ -26,6 +26,11 @@
 
 .interest.active {
     background-color: #FF6B6B;
+}
+
+.logo img {
+    height: 70px; /* Ajusta el tamaño del logo según tus necesidades */
+    left: 10px;
 }
 
 footer {
