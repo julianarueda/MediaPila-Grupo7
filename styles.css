@@ -3,10 +3,11 @@
 }
 
 .navbar li a:hover {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 .navbar li a {
-    color: white;
+    color: rgb(255, 255, 255);
+    
 }
 
 .interests-container {
@@ -42,7 +43,7 @@ footer {
     position: relative;
     text-align: center;
     padding: 1rem;
-    background-color: #f8f9fa;
+    background-color: #faf8f9;
     width: 100%;
 }
 body, html {
@@ -105,9 +106,10 @@ body, html {
 .footer-links li a {
     color: black;
     text-decoration: none;
+   
 }
 
-.footer-links li a:hover {
+.footer-links a:hover {
     color: rgb(241, 15, 121); /* Cambiar color al pasar el mouse sobre el enlace */
 }
 
@@ -143,3 +145,52 @@ body, html {
     height: 75px; /* Asegúrate de que el alto y ancho sean iguales */
     border-radius: 50%; /* Hace que la imagen sea circular */
 }
+
+.header {
+   position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background:  #D41072;
+    backdrop-filter: blurd(50px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    font-family:inherit ;
+ 
+}
+
+
+.navbar a {
+    font-size: 1.15rem;
+    color: #ffffffe8;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.15rem;   
+    padding: 5px 15px;    
+
+}
+
+.icons{
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    color: #ffd1d1;
+    cursor: pointer;
+    display: none;
+
+}
+
+.navbar a:hover{
+    color: #ff009d;
+    background-color: #ffffff;
+    border-radius: 20px;
+
+}
+
+
+
+
+
+
