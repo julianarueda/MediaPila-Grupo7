@@ -186,7 +186,7 @@ body, html {
     top: 0;
     left: 0;
     width: 100%;
-    background:  #D41072;
+    background: linear-gradient(90deg, transparent, #D41072);
     backdrop-filter: blurd(50px);
     display: flex;
     justify-content: space-between;
