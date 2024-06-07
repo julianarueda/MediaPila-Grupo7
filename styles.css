@@ -60,6 +60,19 @@
     background-color: #D41072; /* Color de fondo al pasar el mouse */
     color: white;
 }
+#registrarse{
+    background-color: #FF0065; /* Cambia el color de fondo */
+    border: none; /* Elimina el borde */
+    color: black; /* Cambia el color del texto */
+    font-size: 1.2rem; /* Cambia el tamaño de la fuente */
+    border-radius: 8px; /* Añade bordes redondeados */
+    padding: 10px 20px; /* Añade padding */
+    transition: background-color 0.3s; /* Añade una transición suave */
+}
+#registrarse:hover {
+    background-color: #D41072; /* Color de fondo al pasar el mouse */
+    color: white;
+}
 footer {
     background-color: transparent;
     color: black;
