@@ -2,37 +2,83 @@
     margin: 0px auto;
 }
 
-.navbar li a:hover {
-    background-color: rgb(255, 255, 255);
-}
-.navbar li a {
-    color: rgb(255, 255, 255);
-    
+/*NavBar*/
+
+.navbar a {
+    font-size: 1.15rem;
+    color: black;
+    margin-left: 2.15rem;   
+    padding: 5px 15px;
 }
 
-.interests-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.interest {
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    padding: 10px 20px;
-    margin: 5px;
+.icons{
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    color: #ffd1d1;
     cursor: pointer;
-    transition: background-color 0.3s;
+    display: none;
 }
 
-.interest.active {
-    background-color: #FF6B6B;
+.navbar a:hover{
+    color: #ff009d;
+    background-color: #ffffff;
+    border-radius: 20px;
 }
 
-.logo img {
-    height: 70px; /* Ajusta el tamaño del logo según tus necesidades */
-    left: 10px;
+/*Página de Inicio */
+
+.iniciar-sesion-btn {
+    background-color: #FF0065; /* Cambia el color de fondo */
+    border: none; /* Elimina el borde */
+    color: black; /* Cambia el color del texto */
+    font-size: 1.2rem; /* Cambia el tamaño de la fuente */
+    border-radius: 8px; /* Añade bordes redondeados */
+    padding: 10px 20px; /* Añade padding */
+    transition: background-color 0.3s; /* Añade una transición suave */
 }
+.iniciar-sesion-btn:hover {
+    background-color: #D41072; /* Color de fondo al pasar el mouse */
+    color: white;
+}
+.registrame-btn {
+    background-color: #82EDE1; /* Cambia el color de fondo */
+    border: none; /* Elimina el borde */
+    color: black; /* Cambia el color del texto */
+    font-size: 1.2rem; /* Cambia el tamaño de la fuente */
+    border-radius: 8px; /* Añade bordes redondeados */
+    padding: 10px 20px; /* Añade padding */
+    transition: background-color 0.3s; /* Añade una transición suave */
+}
+.registrame-btn:hover {
+    background-color: #32746D; /* Color de fondo al pasar el mouse */
+    color: white;
+}
+
+.circular-img {
+    width: 75px;
+    height: auto; /* Asegúrate de que el alto y ancho sean iguales */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+}
+
+.container p {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*VERIFICAR IDENTIDAD*/
 
 #subirfotos{
     background-color: #FF0065; /* Cambia el color de fondo */
@@ -73,6 +119,47 @@
     background-color: #D41072; /* Color de fondo al pasar el mouse */
     color: white;
 }
+
+/*HEADER*/
+
+.header {
+    position: relative;
+    top: 0px;
+    height: auto;
+    width: 100%;
+    background: linear-gradient(90deg, transparent, #D41072);
+    backdrop-filter: blurd(50px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo img {
+    height: auto; /* Ajusta el tamaño del logo según tus necesidades */
+    left: 1px;
+}
+
+/*ACTIVIDADES*/
+
+.interests-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.interest {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.interest.active {
+    background-color: #82EDE1;
+}
+
 footer {
     background-color: transparent;
     color: black;
@@ -84,32 +171,6 @@ footer {
     padding: 1rem;
     background-color: #faf8f9;
     width: 100%;
-}
-body, html {
-    height: 100%;
-    margin: 0;
-}
-
-.container {
-        margin-top: 20px;
-        text-align: center;
-}
-  
-.container p {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.main-container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-.content {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .footer p {
@@ -148,81 +209,8 @@ body, html {
     color: rgb(241, 15, 121); /* Cambiar color al pasar el mouse sobre el enlace */
 }
 
-.iniciar-sesion-btn {
-    background-color: #FF0065; /* Cambia el color de fondo */
-    border: none; /* Elimina el borde */
-    color: black; /* Cambia el color del texto */
-    font-size: 1.2rem; /* Cambia el tamaño de la fuente */
-    border-radius: 8px; /* Añade bordes redondeados */
-    padding: 10px 20px; /* Añade padding */
-    transition: background-color 0.3s; /* Añade una transición suave */
-}
-.iniciar-sesion-btn:hover {
-    background-color: #D41072; /* Color de fondo al pasar el mouse */
-    color: white;
-}
-.registrame-btn {
-    background-color: #82EDE1; /* Cambia el color de fondo */
-    border: none; /* Elimina el borde */
-    color: black; /* Cambia el color del texto */
-    font-size: 1.2rem; /* Cambia el tamaño de la fuente */
-    border-radius: 8px; /* Añade bordes redondeados */
-    padding: 10px 20px; /* Añade padding */
-    transition: background-color 0.3s; /* Añade una transición suave */
-}
-.registrame-btn:hover {
-    background-color: #32746D; /* Color de fondo al pasar el mouse */
-    color: white;
-}
-
-.circular-img {
-    width: 75px;
-    height: 75px; /* Asegúrate de que el alto y ancho sean iguales */
-    border-radius: 50%; /* Hace que la imagen sea circular */
-}
-
-.header {
-   position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: linear-gradient(90deg, transparent, #D41072);
-    backdrop-filter: blurd(50px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    font-family:inherit ;
- 
-}
 
 
-.navbar a {
-    font-size: 1.15rem;
-    color: #ffffffe8;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 2.15rem;   
-    padding: 5px 15px;    
-
-}
-
-.icons{
-    position: absolute;
-    right: 5%;
-    font-size: 2.8rem;
-    color: #ffd1d1;
-    cursor: pointer;
-    display: none;
-
-}
-
-.navbar a:hover{
-    color: #ff009d;
-    background-color: #ffffff;
-    border-radius: 20px;
-
-}
 
 
 
