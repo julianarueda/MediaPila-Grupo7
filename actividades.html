@@ -33,33 +33,42 @@
 
         <h1 style="text-align: center; margin-top: 30px; color: black;">¡Descubrí Actividades para Vos!</h1>
 
-        <div class="container">
-            <div class="row justify-content-center" style="margin-top: 70px;">
-                <div class="col-md-4">
-                    <div class="section" id="conciertos">
-                        <img src="img/imagen3.png" alt="conciertos" class="img-fluid rounded 50px">
-                        <h2>Conciertos</h2>
-                        <button>Ver Más</button>
-                    </div>
+
+        <div id="carouselExample" class="carousel slide">
+            
+            <div class="carousel-inner" id="imagenesCarousel"> 
+
+                <div class="carousel-item active">
+                    <img src="img/imagen3.png" class="d-block w-100" alt="Conciertos" style="padding: 150px; align-items: center;">
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                    <button class="btn btn-primary">Ver más</button>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="section" id="deportes">
-                        <img src="img/imagen2.jpg" alt="deportes" class="img-fluid rounded 50px">
-                        <h2>Deportes</h2>
-                        <button>Ver Más</button>
-                    </div>
+                <div class="carousel-item">
+                    <img src="img/imagen2.jpg" class="d-block w-100" alt="Deportes" style="padding: 150px; align-items: center;">
                 </div>
-                    
-                <div class="col-md-4">
-                    <div class="section" id="domingueando">
-                        <img src="img/imagen1.jpg" alt="domingueando" class="img-fluid rounded 50px">
-                        <h2>Domingueando</h2>
-                        <button>Ver Más</button>
-                    </div>
+                <div class="carousel-caption d-none d-md-block">
+                    <button class="btn btn-primary">Ver más</button>
                 </div>
+
+                <div class="carousel-item">
+                    <img src="img/imagen1.jpg" class="d-block w-100" alt="Domingueando" style="padding: 150px; align-items: center;">
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                    <button class="btn btn-primary">Ver más</button>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-        </div>
 
         <footer class="footer" style="margin-top: 140px;">
             <div class="container">

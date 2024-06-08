@@ -139,7 +139,7 @@
     left: 1px;
 }
 
-/*ACTIVIDADES*/
+/*COMPLETAR PERFIL*/
 
 .interests-container {
     display: flex;
@@ -159,6 +159,33 @@
 .interest.active {
     background-color: #82EDE1;
 }
+
+/*ACTIVIDADES*/
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #FF0065; /* Cambia este color al que prefieras */
+    background-size: 100%, 100%;
+    width: 50px; /* Cambia el tamaño al que prefieras */
+    height: 50px; /* Cambia el tamaño al que prefieras */
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#imagenesCarousel {
+    margin-top: -90px;
+    width: 80%; /* Asegura que las imágenes ocupen todo el ancho del contenedor */
+    height: 600px; /* Establece una altura fija */
+    border-radius: solid 2px;
+}
+
+.carousel-caption-d-none-d-md-block {
+    margin-bottom: 80px;
+}
+/*FOOTER*/
 
 footer {
     background-color: transparent;
