@@ -107,7 +107,7 @@
     color: white;
 }
 #registrarse{
-    background-color: #FF0065; /* Cambia el color de fondo */
+    background-color: #82EDE1; /* Cambia el color de fondo */
     border: none; /* Elimina el borde */
     color: black; /* Cambia el color del texto */
     font-size: 1.2rem; /* Cambia el tamaño de la fuente */
@@ -116,7 +116,7 @@
     transition: background-color 0.3s; /* Añade una transición suave */
 }
 #registrarse:hover {
-    background-color: #D41072; /* Color de fondo al pasar el mouse */
+    background-color: #32746D; /* Color de fondo al pasar el mouse */
     color: white;
 }
 
