@@ -191,9 +191,9 @@
 footer {
     background-color: #000000; /* Fondo negro */
     color: #ffffff; /* Texto blanco */
-    padding: 20px 0; /* Reducir padding superior e inferior */
+    padding: 15px 0; /* Reducir padding superior e inferior */
     text-align: center;
-    border-top: 5px solid #FF0065; /* Borde superior rosa brillante */
+    border-top: 3px solid #FF0065; /* Borde superior rosa brillante */
 }
 
 /* Contenedor del footer */
