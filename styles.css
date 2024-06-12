@@ -186,57 +186,108 @@
     margin-bottom: 80px;
 }
 /*FOOTER*/
-
+/* Estilos generales */
+/* Estilos para el footer más compacto */
 footer {
-    background-color: transparent;
-    color: black;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    padding: 20px 0;
-    position: relative;
+    background-color: #000000; /* Fondo negro */
+    color: #ffffff; /* Texto blanco */
+    padding: 20px 0; /* Reducir padding superior e inferior */
     text-align: center;
-    padding: 1rem;
-    background-color: #faf8f9;
-    width: 100%;
+    border-top: 5px solid #FF0065; /* Borde superior rosa brillante */
 }
 
-.footer p {
-    font-family: "Protest Riot", sans-serif;
-}
-
-.footer-links {
+/* Contenedor del footer */
+.footer-container {
     display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
-  }
-  
-  .footer-links a {
-    color: black;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px; /* Reducir padding horizontal */
+}
+
+/* Logo del footer */
+.footer-logo img {
+    max-width: 100px; /* Reducir el tamaño máximo del logo */
+}
+
+/* Estilos para los enlaces del footer */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Eliminar márgenes */
+}
+
+.footer-links ul li {
+    margin: 5px 0; /* Reducir margen inferior y superior */
+}
+
+.footer-links ul li a {
+    color: #ffffff; /* Texto blanco */
     text-decoration: none;
+    font-size: 0.9em; /* Reducir el tamaño de la fuente */
+    transition: color 0.3s; /* Transición suave al cambiar de color */
+}
+
+.footer-links ul li a:hover {
+    color: #FF0065; /* Hover en rosa brillante */
+}
+
+/* Estilos para los iconos de redes sociales */
+.footer-social {
     display: flex;
-    align-items: center;
-  }
-  
-  .footer-icono {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-  }
-
-
-  
-.footer-links li a {
-    color: black;
-    text-decoration: none;
-   
+    justify-content: center; /* Centrar horizontalmente los iconos */
+    align-items: center; /* Centrar verticalmente los iconos */
+    margin-top: 10px; /* Espacio superior */
 }
 
-.footer-links a:hover {
-    color: rgb(241, 15, 121); /* Cambiar color al pasar el mouse sobre el enlace */
+.footer-social a {
+    margin: 0 10px; /* Espacio horizontal entre los iconos */
+    color: #ffffff; /* Color blanco para los iconos */
+    font-size: 20px; /* Tamaño de los iconos */
+    transition: transform 0.3s, color 0.3s; /* Transición suave */
 }
 
+.footer-social a:hover {
+    color: #FF0065; /* Hover en rosa brillante */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
 
+/* Estilos para la información de contacto */
+.footer-contact p {
+    margin: 3px 0; /* Reducir márgenes superior e inferior */
+    color: #ffffff; /* Texto blanco */
+    font-size: 0.9em; /* Reducir el tamaño de la fuente */
+}
+
+/* Estilos para la parte inferior del footer */
+.footer-bottom {
+    padding: 5px 0; /* Reducir padding superior e inferior */
+    background-color: #000000; /* Fondo negro */
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.8em; /* Reducir el tamaño de la fuente */
+    color: #ffffff; /* Texto blanco */
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links ul {
+        padding: 0;
+    }
+
+    .footer-social {
+        margin-top: 10px; /* Reducir margen superior */
+    }
+}
 
 
 
