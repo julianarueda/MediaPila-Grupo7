@@ -1,21 +1,15 @@
 * {
     margin: 0px auto;
-}
-
-*{
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: weight;
     font-style: normal;
 }
 
 /*NavBar*/
 
-.navbar a {
-    font-size: 1.15rem;
-    color: black;
-    margin-left: 2.15rem;   
-    padding: 5px 15px;
+#items-navbar {
+    color: #000000;
 }
 
 .icons{
