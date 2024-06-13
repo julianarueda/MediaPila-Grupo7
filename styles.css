@@ -205,6 +205,61 @@ h1 {
 }
 
 /*ACTIVIDADES*/
+#botonConciertos {
+    background-color: #82EDE1; /* Cambia el color de fondo */
+    border: none; /* Elimina el borde */
+    color: black; /* Cambia el color del texto */
+    font-size: 1.2rem; /* Cambia el tamaño de la fuente */
+    border-radius: 8px; /* Añade bordes redondeados */
+    padding: 10px 20px; /* Añade padding */
+    transition: background-color 0.3s; /* Añade una transición suave */
+}
+#botonConciertos:hover {
+    background-color: #32746D; /* Color de fondo al pasar el mouse */
+    color: white;
+}
+#botonDeportes {
+    background-color: #82EDE1; /* Cambia el color de fondo */
+    border: none; /* Elimina el borde */
+    color: black; /* Cambia el color del texto */
+    font-size: 1.2rem; /* Cambia el tamaño de la fuente */
+    border-radius: 8px; /* Añade bordes redondeados */
+    padding: 10px 20px; /* Añade padding */
+    transition: background-color 0.3s; /* Añade una transición suave */
+}
+#botonDeportes:hover {
+    background-color: #32746D; /* Color de fondo al pasar el mouse */
+    color: white;
+}
+#botonDomingueando {
+    background-color: #82EDE1; /* Cambia el color de fondo */
+    border: none; /* Elimina el borde */
+    color: black; /* Cambia el color del texto */
+    font-size: 1.2rem; /* Cambia el tamaño de la fuente */
+    border-radius: 8px; /* Añade bordes redondeados */
+    padding: 10px 20px; /* Añade padding */
+    transition: background-color 0.3s; /* Añade una transición suave */
+}
+#botonDomingueando:hover {
+    background-color: #32746D; /* Color de fondo al pasar el mouse */
+    color: white;
+}
+
+.carousel-item img {
+    max-height: 400px; /* Altura máxima de las imágenes */
+    object-fit: cover; /* Ajuste de la imagen para cubrir */
+}
+
+.carousel-inner {
+    max-width: 800px; /* Ancho máximo del carrusel */
+    margin: 0 auto; /* Centrado horizontal */
+}
+.carousel-item img {
+    max-height: 400px; /* Altura máxima de las imágenes */
+    object-fit: cover; /* Ajuste de la imagen para cubrir */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Recorta las imágenes dentro de los bordes redondeados */
+}
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -217,17 +272,6 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-#imagenesCarousel {
-    margin-top: -90px;
-    width: 80%; /* Asegura que las imágenes ocupen todo el ancho del contenedor */
-    height: 600px; /* Establece una altura fija */
-    border-radius: solid 2px;
-}
-
-.carousel-caption-d-none-d-md-block {
-    margin-bottom: 80px;
 }
 /*FOOTER*/
 /* Estilos generales */
