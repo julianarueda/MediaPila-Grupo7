@@ -22,24 +22,30 @@
       </div>
     </nav>
 
-    <div class="container" style="position: relative; top: 30px; color: black; text-align: center;">
-      <h1 style="font-size: 40px;">Ahora necesitamos verificar tu identidad</h1>
-
-      <div>
-
-        <form action="/procesar_fotos" method="post" enctype="multipart/form-data" style="position: relative; top: 20px;">    
-          <label for="foto1">Adjunte foto del frente de su DNI</label>
-          <input type="file" id="foto1" name="foto1" accept="image/*" required>
-          <br><br>
-
-          <label for="foto2">Adjunte foto del dorso de su DNI</label>
-          <input type="file" id="foto2" name="foto2" accept="image/*" required>
-          <br><br>
-
-          <input type="submit" id=subirfotos value="Subir y verificar identidad">
+    
+      <div class="card" id="card-verificar">
+        <h2>Verificación de identidad</h2>
+        <p>Sube tu DNI para verificar tu identidad.</p>
+        
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <div class="upload-section">
+                <label for="dni-front">
+                    <i class="fas fa-id-card"></i> Frente del DNI
+                </label>
+                <input type="file" id="dni-front" name="dni-front" accept="image/*, .pdf" required>
+            </div>
+            
+            <div class="upload-section">
+                <label for="dni-back">
+                    <i class="fas fa-id-card-alt"></i> Reverso del DNI
+                </label>
+                <input type="file" id="dni-back" name="dni-back" accept="image/*, .pdf" required>
+            </div>
+            
+            <button type="submit" class="submit-btn">Subir Archivos</button>
         </form>
-      </div>
-
+    </div>
+      <br> <br> 
     </div>
        <footer>
         <div class="footer-container">

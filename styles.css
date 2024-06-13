@@ -81,8 +81,114 @@
 
 /*VERIFICAR IDENTIDAD*/
 
-#subirfotos{
-    background-color: #FF0065; /* Cambia el color de fondo */
+#card-identidad{
+    background-color: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Cambiado de 'center' a 'flex-start' para controlar la posición vertical */
+    height: 100vh;
+    margin: 0;
+    padding-top: 50px; /* Añadir un relleno superior para bajar la tarjeta */
+}
+/* Estilo de la tarjeta */
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 450px;
+    width: 90%;
+    text-align: center; /* Centra el texto horizontalmente */
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-top: 50px; /* Añadir margen superior adicional */
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo de los encabezados */
+.card h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 1.25em;
+}
+
+/* Estilo del texto */
+.card p {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 0.95em;
+    line-height: 1.4; /* Añade un poco de espacio entre líneas para mejor legibilidad */
+}
+
+/* Estilo del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos del formulario */
+    width: 100%; /* Asegura que el formulario tome todo el ancho de la tarjeta */
+}
+
+/* Estilo de las secciones de subida de archivos */
+.upload-section {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: left; /* Texto alineado a la izquierda dentro de cada sección de subida */
+}
+
+.upload-section label {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 5px;
+    font-size: 0.95em;
+    margin-right: 165px;
+}
+
+.upload-section label i {
+    margin-right: 8px;
+}
+
+input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9em;
+    color: #555;
+}
+
+input[type="file"]:focus {
+    border-color: #009578;
+}
+
+/* Estilo del botón de envío */
+.submit-btn {
+    background-color: #009578;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #007f63;
+}
+.submit-btn:hover {
+    background-color: #007f63;
+}
+
+#verificar-identidad{
+    background-color: #82EDE1; /* Cambia el color de fondo */
     border: none; /* Elimina el borde */
     color: black; /* Cambia el color del texto */
     font-size: 1.2rem; /* Cambia el tamaño de la fuente */
@@ -90,10 +196,11 @@
     padding: 10px 20px; /* Añade padding */
     transition: background-color 0.3s; /* Añade una transición suave */
 }
-#subirfotos:hover {
-    background-color: #D41072; /* Color de fondo al pasar el mouse */
+#verificar-identidad:hover{
+    background-color: #32746D; /* Color de fondo al pasar el mouse */
     color: white;
 }
+
 #botonGuardar{
     background-color: #FF0065; /* Cambia el color de fondo */
     border: none; /* Elimina el borde */
@@ -283,6 +390,7 @@ footer {
     padding: 15px 0; /* Reducir padding superior e inferior */
     text-align: center;
     border-top: 3px solid #FF0065; /* Borde superior rosa brillante */
+    margin-top: 130px;
 }
 
 /* Contenedor del footer */
