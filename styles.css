@@ -8,6 +8,11 @@
 
 /*NavBar*/
 
+#barraDeNavegación {
+    background: linear-gradient(100deg, #06FFDA, #F5FF9A, #FF0073);
+    max-height: 100px;
+}
+
 #items-navbar {
     color: #000000;
 }
@@ -28,6 +33,16 @@
 }
 
 /*Página de Inicio */
+
+#h1-Inicio {
+    text-align: center;
+    color: #FF0065;
+}
+
+#parrafo-inicio {
+    text-align: center;
+    font-size: 20px; color: black;
+}
 
 .iniciar-sesion-btn {
     background-color: #FF0065; /* Cambia el color de fondo */
@@ -79,7 +94,24 @@
     justify-content: center;
 }
 
+/*Formulario/Página 2*/
+
+#logoDeForm {
+    height: auto;
+    width: 90px;
+}
+
+#Formulario {
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
 /*VERIFICAR IDENTIDAD*/
+
+#LogoIdentidad {
+    height: auto;
+    width: 90px;
+}
 
 #card-identidad{
     background-color: #f4f6f9;
@@ -253,14 +285,20 @@ input[type="file"]:focus {
     text-align: center;
 }
 
+#Intereses {
+    text-align: center;
+    margin-top: 30px;
+}
+
 .profile-card {
     width: 200px;
     height: 200px;
     margin: 0 auto;
     border-radius: 50%;
+    border: 2px solid rgb(34, 34, 34); /* Borde de 2px de grosor con color azul */
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
+    background-color: gray;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -313,6 +351,17 @@ h1 {
 }
 
 /*ACTIVIDADES*/
+
+#TituloActividades {
+    text-align: center;
+    margin-top: 30px;
+    color: black;
+}
+
+#carouselExample {
+    margin-top: 60px;
+}
+
 #botonConciertos {
     background-color: #82EDE1; /* Cambia el color de fondo */
     border: none; /* Elimina el borde */
@@ -391,6 +440,10 @@ footer {
     text-align: center;
     border-top: 3px solid #FF0065; /* Borde superior rosa brillante */
     margin-top: 130px;
+}
+
+#FooterActividades {
+    margin-top: 50px;
 }
 
 /* Contenedor del footer */
