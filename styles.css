@@ -539,9 +539,74 @@ footer {
     }
 }
 
+.destacados {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
 
+.item {
+    width: calc(33% - 28px);
+    margin: 16px;
+    padding: 12px 12px 20px;
+    border-radius: 4px;
+    background-color: #F5F5F4;
+    position: relative;
+    top: 0;
+    z-index: 5;
+}
 
+.cont-1550 {
+    max-width: 1550px;
+}
 
+.btn-unirme {
+    color: #020202;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+    padding: 8px 28px;
+    display: inline-block;
+    border-radius: 24px;
+    background-color: #FF0065;
+    width: 100%;
+    text-align: center;
+}
 
+.destacados .item .txt h4 {
+    color: #0B2739;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.cont-1550 .destacados .item .txt span {
+    color: #50545B;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+@media (max-width: 760px) {
+    .cont-1550 .destacados .item {
+        max-width: 445px;
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 1230px) {
+    .cont-1550 .destacados .item {
+        width: 445px;
+    }
+}
+@media (max-width: 1400px) {
+    .cont-1550 .destacados .item {
+        width: calc(33% - 12px);
+        margin: 16px 8px;
+    }
+}
 
 

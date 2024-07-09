@@ -25,40 +25,12 @@
             </div>
         </nav>
 
-        <h1 id="TituloActividades">¡Descubrí actividades para vos!</h1>
-
-        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/imagen3.png" class="d-block w-100" alt="Conciertos">
-                    <div class="carousel-caption d-none d-md-block">
-                        <a href="./conciertos.html" class="btn btn-primary" id="botonConciertos">Conciertos</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/deportes.jpeg" class="d-block w-100" alt="Deportes">
-                    <div class="carousel-caption d-none d-md-block">
-                        <a href="./deportes.html" class="btn btn-primary" id="botonDeportes">Deportes</a>
-                     </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/airelibre.jpg" class="d-block w-100" alt="Domingueando">
-                    <div class="carousel-caption d-none d-md-block">
-                        <a href="./domingueando.html" class="btn btn-primary" id="botonDomingueando">Domingueando</a>
-                    </div>
-                </div>
+        <h1 id="TituloActividades">Deportes</h1>
+        <div class="cont-1550">
+            <div class="destacados" id="eventos-container">
+                <!-- Aquí se mostrarán los eventos dinámicamente -->
             </div>
-            <!-- Botones de control -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
-
         <footer id="FooterActividades">
             <div class="footer-container">
                 <div class="footer-links">
@@ -82,6 +54,12 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <script src="script.js"></script>
         <script src="javascript/eventos.js"></script>
+
+        <script>
+            window.onload = function() {
+                mostrarDeportes();
+            };
+        </script>
     </body>
 
 </html>
