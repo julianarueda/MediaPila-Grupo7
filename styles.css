@@ -3,10 +3,10 @@
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
-    font-style: normal;
 }
 
 /*NavBar*/
+
 body {
     margin: 0;
     padding: 0;
@@ -76,20 +76,23 @@ body {
 }
 
 /*Títulos:h1*/
-h1 {
+
+.titulosComunes {
+    text-align: center;
     font-size: 3em;
-    margin-top: 20px;
+    margin-top: 10px;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     position: relative;
     padding: 10px 20px;
-    background: linear-gradient(100deg, #06FFDA, #F5FF9A, #FF0073);;
+    background: linear-gradient(100deg, #06FFDA, #cbf35b, #FF0073);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: gradientAnimation 3s infinite;
 }
 
-h1::before {
+.titulosComunes::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -102,7 +105,7 @@ h1::before {
     transition: all 0.3s ease-in-out;
 }
 
-h1:hover::before {
+.titulosComunes:hover::before {
     transform: scaleX(1);
 }
 
@@ -187,11 +190,6 @@ h1:hover::before {
     width: 90px;
 }
 
-#Formulario {
-    margin-top: 20px;
-    margin-bottom: 20px
-}
-
 /*VERIFICAR IDENTIDAD*/
 
 #LogoIdentidad {
@@ -244,10 +242,13 @@ h1:hover::before {
 
 /* Estilo del formulario */
 form {
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center; 
     width: 100%;
+    height: auto;
+    margin-top: 20px;
 }
 
 
@@ -306,8 +307,8 @@ input[type="file"]:focus {
 }
 
 #verificar-identidad{
-    background-color: #82EDE1; /
-    border: none; 
+    background-color: #82EDE1;
+    border: none;
     color: black; 
     font-size: 1.2rem; 
     border-radius: 8px; 
@@ -366,20 +367,45 @@ input[type="file"]:focus {
 }
 
 /*COMPLETAR PERFIL*/
-.container {
-    margin-top: 120px;
+
+.Subtitulo {
     text-align: center;
+    font-size: 2em;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    padding: 10px 20px;
+    background: linear-gradient(100deg, #06FFDA, #cbf35b, #FF0073);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 3s infinite;
 }
 
-#Intereses {
-    text-align: center;
-    margin-top: 30px;
+.Subtitulo::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #FF0073;
+    visibility: visible;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
 }
+
+.Subtitulo:hover::before {
+    transform: scaleX(1);
+}
+
 
 .profile-card {
     width: 200px;
     height: 200px;
     margin: 0 auto;
+    text-align: center;
     border-radius: 50%;
     border: 2px solid rgb(34, 34, 34); 
     overflow: hidden;
@@ -399,14 +425,10 @@ input[type="file"]:focus {
     display: none;
 }
 
-h1 {
-    color: black;
-    margin-top: -90px;
-}
-
 .interests-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .interest {
@@ -422,15 +444,17 @@ h1 {
 .interest.active {
     background-color: #82EDE1;
 }
+
 #botonGuardar{
     background-color: #82EDE1; 
     border: none; 
     color: black; 
     font-size: 1.2rem; 
     border-radius: 8px; 
-    padding: 10px 20px; 
+    padding: 10px 20px;
     transition: background-color 0.3s; 
 }
+
 #botonGuardar:hover {
     background-color: #32746D; /* Color de fondo al pasar el mouse */
     color: white;
