@@ -78,12 +78,10 @@ body {
 /*Títulos:h1*/
 h1 {
     font-size: 3em;
-    color: #343a40;
     margin-top: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
     position: relative;
-    
     padding: 10px 20px;
     background: linear-gradient(100deg, #06FFDA, #F5FF9A, #FF0073);;
     -webkit-background-clip: text;
@@ -133,36 +131,36 @@ h1:hover::before {
 }
 
 .iniciar-sesion-btn {
-    background-color: #FF0065; /* Cambia el color de fondo */
-    border: none; /* Elimina el borde */
-    color: black; /* Cambia el color del texto */
-    font-size: 1.2rem; /* Cambia el tamaño de la fuente */
-    border-radius: 8px; /* Añade bordes redondeados */
-    padding: 10px 20px; /* Añade padding */
-    transition: background-color 0.3s; /* Añade una transición suave */
+    background-color: #FF0065; 
+    border: none; 
+    color: black; 
+    font-size: 1.2rem; 
+    border-radius: 8px; 
+    padding: 10px 20px; 
+    transition: background-color 0.3s; 
 }
 .iniciar-sesion-btn:hover {
-    background-color: #D41072; /* Color de fondo al pasar el mouse */
+    background-color: #D41072; 
     color: white;
 }
 .registrame-btn {
-    background-color: #82EDE1; /* Cambia el color de fondo */
-    border: none; /* Elimina el borde */
-    color: black; /* Cambia el color del texto */
-    font-size: 1.2rem; /* Cambia el tamaño de la fuente */
-    border-radius: 8px; /* Añade bordes redondeados */
-    padding: 10px 20px; /* Añade padding */
-    transition: background-color 0.3s; /* Añade una transición suave */
+    background-color: #82EDE1; 
+    border: none; 
+    color: black; 
+    font-size: 1.2rem; 
+    border-radius: 8px; 
+    padding: 10px 20px; 
+    transition: background-color 0.3s; 
 }
 .registrame-btn:hover {
-    background-color: #32746D; /* Color de fondo al pasar el mouse */
+    background-color: #32746D; 
     color: white;
 }
 
 .circular-img {
     width: 75px;
-    height: auto; /* Asegúrate de que el alto y ancho sean iguales */
-    border-radius: 50%; /* Hace que la imagen sea circular */
+    height: auto; 
+    border-radius: 50%; 
 }
 
 .container p {
@@ -205,10 +203,10 @@ h1:hover::before {
     background-color: #f4f6f9;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Cambiado de 'center' a 'flex-start' para controlar la posición vertical */
+    align-items: flex-start; 
     height: 100vh;
     margin: 0;
-    padding-top: 50px; /* Añadir un relleno superior para bajar la tarjeta */
+    padding-top: 50px; 
 }
 /* Estilo de la tarjeta */
 .card {
@@ -218,9 +216,9 @@ h1:hover::before {
     padding: 20px;
     max-width: 450px;
     width: 90%;
-    text-align: center; /* Centra el texto horizontalmente */
+    text-align: center; 
     transition: transform 0.2s, box-shadow 0.2s;
-    margin-top: 50px; /* Añadir margen superior adicional */
+    margin-top: 50px; 
 }
 
 .card:hover {
@@ -241,22 +239,22 @@ h1:hover::before {
     color: #666;
     margin-bottom: 20px;
     font-size: 0.95em;
-    line-height: 1.4; /* Añade un poco de espacio entre líneas para mejor legibilidad */
+    line-height: 1.4; 
 }
 
 /* Estilo del formulario */
 form {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra los elementos del formulario */
-    width: 100%; /* Asegura que el formulario tome todo el ancho de la tarjeta */
+    align-items: center; 
+    width: 100%;
 }
 
-/* Estilo de las secciones de subida de archivos */
+
 .upload-section {
     width: 100%;
     margin-bottom: 15px;
-    text-align: left; /* Texto alineado a la izquierda dentro de cada sección de subida */
+    text-align: left; 
 }
 
 .upload-section label {
@@ -308,43 +306,43 @@ input[type="file"]:focus {
 }
 
 #verificar-identidad{
-    background-color: #82EDE1; /* Cambia el color de fondo */
-    border: none; /* Elimina el borde */
-    color: black; /* Cambia el color del texto */
-    font-size: 1.2rem; /* Cambia el tamaño de la fuente */
-    border-radius: 8px; /* Añade bordes redondeados */
-    padding: 10px 20px; /* Añade padding */
-    transition: background-color 0.3s; /* Añade una transición suave */
+    background-color: #82EDE1; /
+    border: none; 
+    color: black; 
+    font-size: 1.2rem; 
+    border-radius: 8px; 
+    padding: 10px 20px; 
+    transition: background-color 0.3s; 
 }
 #verificar-identidad:hover{
-    background-color: #32746D; /* Color de fondo al pasar el mouse */
+    background-color: #32746D; 
     color: white;
 }
 
 #botonGuardar{
-    background-color: #FF0065; /* Cambia el color de fondo */
-    border: none; /* Elimina el borde */
-    color: black; /* Cambia el color del texto */
-    font-size: 1.2rem; /* Cambia el tamaño de la fuente */
-    border-radius: 8px; /* Añade bordes redondeados */
-    padding: 10px 20px; /* Añade padding */
-    transition: background-color 0.3s; /* Añade una transición suave */
+    background-color: #FF0065;
+    border: none; 
+    color: black; 
+    font-size: 1.2rem; 
+    border-radius: 8px; 
+    padding: 10px 20px; 
+    transition: background-color 0.3s; 
 }
 #botonGuardar:hover {
-    background-color: #D41072; /* Color de fondo al pasar el mouse */
+    background-color: #D41072; 
     color: white;
 }
 #registrarse{
-    background-color: #82EDE1; /* Cambia el color de fondo */
-    border: none; /* Elimina el borde */
-    color: black; /* Cambia el color del texto */
-    font-size: 1.2rem; /* Cambia el tamaño de la fuente */
-    border-radius: 8px; /* Añade bordes redondeados */
-    padding: 10px 20px; /* Añade padding */
-    transition: background-color 0.3s; /* Añade una transición suave */
+    background-color: #82EDE1; 
+    border: none; 
+    color: black; 
+    font-size: 1.2rem; 
+    border-radius: 8px; 
+    padding: 10px 20px; 
+    transition: background-color 0.3s; 
 }
 #registrarse:hover {
-    background-color: #32746D; /* Color de fondo al pasar el mouse */
+    background-color: #32746D; 
     color: white;
 }
 
@@ -363,7 +361,7 @@ input[type="file"]:focus {
 }
 
 .logo img {
-    height: auto; /* Ajusta el tamaño del logo según tus necesidades */
+    height: auto; 
     left: 1px;
 }
 
@@ -383,7 +381,7 @@ input[type="file"]:focus {
     height: 200px;
     margin: 0 auto;
     border-radius: 50%;
-    border: 2px solid rgb(34, 34, 34); /* Borde de 2px de grosor con color azul */
+    border: 2px solid rgb(34, 34, 34); 
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     background-color: gray;
@@ -425,13 +423,13 @@ h1 {
     background-color: #82EDE1;
 }
 #botonGuardar{
-    background-color: #82EDE1; /* Cambia el color de fondo */
-    border: none; /* Elimina el borde */
-    color: black; /* Cambia el color del texto */
-    font-size: 1.2rem; /* Cambia el tamaño de la fuente */
-    border-radius: 8px; /* Añade bordes redondeados */
-    padding: 10px 20px; /* Añade padding */
-    transition: background-color 0.3s; /* Añade una transición suave */
+    background-color: #82EDE1; 
+    border: none; 
+    color: black; 
+    font-size: 1.2rem; 
+    border-radius: 8px; 
+    padding: 10px 20px; 
+    transition: background-color 0.3s; 
 }
 #botonGuardar:hover {
     background-color: #32746D; /* Color de fondo al pasar el mouse */
@@ -442,76 +440,79 @@ h1 {
 
 #TituloActividades {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 0px;
     color: black;
 }
 
 #carouselExample {
     margin-top: 60px;
 }
-
+/*botones actividades*/
 #botonConciertos {
-    background-color: #82EDE1; /* Cambia el color de fondo */
-    border: none; /* Elimina el borde */
-    color: black; /* Cambia el color del texto */
-    font-size: 1.2rem; /* Cambia el tamaño de la fuente */
-    border-radius: 8px; /* Añade bordes redondeados */
-    padding: 10px 20px; /* Añade padding */
-    transition: background-color 0.3s; /* Añade una transición suave */
+    background-color: #FF0073; 
+    border: none; 
+    color: white; 
+    text-transform: uppercase;
+    font-size: 1.2rem; 
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: background-color 0.3s; 
 }
 #botonConciertos:hover {
-    background-color: #32746D; /* Color de fondo al pasar el mouse */
+    background-color: #880c4a; 
     color: white;
 }
 #botonDeportes {
-    background-color: #82EDE1; /* Cambia el color de fondo */
-    border: none; /* Elimina el borde */
-    color: black; /* Cambia el color del texto */
-    font-size: 1.2rem; /* Cambia el tamaño de la fuente */
-    border-radius: 8px; /* Añade bordes redondeados */
-    padding: 10px 20px; /* Añade padding */
-    transition: background-color 0.3s; /* Añade una transición suave */
+    background-color: #FF0073; 
+    border: none; 
+    color: white; 
+    text-transform: uppercase;
+    font-size: 1.2rem; 
+    border-radius: 8px; 
+    padding: 10px 20px; 
+    transition: background-color 0.3s; 
 }
 #botonDeportes:hover {
-    background-color: #32746D; /* Color de fondo al pasar el mouse */
+    background-color: #880c4a; 
     color: white;
 }
 #botonDomingueando {
-    background-color: #82EDE1; /* Cambia el color de fondo */
-    border: none; /* Elimina el borde */
-    color: black; /* Cambia el color del texto */
-    font-size: 1.2rem; /* Cambia el tamaño de la fuente */
-    border-radius: 8px; /* Añade bordes redondeados */
-    padding: 10px 20px; /* Añade padding */
-    transition: background-color 0.3s; /* Añade una transición suave */
+    background-color: #FF0073; 
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2rem; 
+    border-radius: 8px; 
+    padding: 10px 20px; 
+    transition: background-color 0.3s; 
 }
 #botonDomingueando:hover {
-    background-color: #32746D; /* Color de fondo al pasar el mouse */
+    background-color: #880c4a; 
     color: white;
 }
 
 .carousel-item img {
-    max-height: 400px; /* Altura máxima de las imágenes */
-    object-fit: cover; /* Ajuste de la imagen para cubrir */
+    max-height: 400px; 
+    object-fit: cover; 
 }
 
 .carousel-inner {
-    max-width: 800px; /* Ancho máximo del carrusel */
-    margin: 0 auto; /* Centrado horizontal */
+    max-width: 800px; 
+    margin: 0 auto; 
 }
 .carousel-item img {
-    max-height: 400px; /* Altura máxima de las imágenes */
-    object-fit: cover; /* Ajuste de la imagen para cubrir */
-    border-radius: 10px; /* Bordes redondeados */
-    overflow: hidden; /* Recorta las imágenes dentro de los bordes redondeados */
+    max-height: 400px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    overflow: hidden; 
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #FF0065; /* Cambia este color al que prefieras */
+    background-color: #FF0065; 
     background-size: 100%, 100%;
-    width: 50px; /* Cambia el tamaño al que prefieras */
-    height: 50px; /* Cambia el tamaño al que prefieras */
+    width: 50px; 
+    height: 50px; 
     content: '';
     position: absolute;
     top: 50%;
