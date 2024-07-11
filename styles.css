@@ -79,13 +79,11 @@ body {
 h1 {
     font-size: 3em;
     color: #343a40;
-    text-align: center;
     margin-top: 20px;
-    left: 450px;
     text-transform: uppercase;
     letter-spacing: 2px;
     position: relative;
-    display: inline-block;
+    
     padding: 10px 20px;
     background: linear-gradient(100deg, #06FFDA, #F5FF9A, #FF0073);;
     -webkit-background-clip: text;
