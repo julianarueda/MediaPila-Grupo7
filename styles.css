@@ -75,6 +75,7 @@ body {
     border-radius: 20px;
 }
 
+/*Títulos:h1*/
 h1 {
     font-size: 3em;
     color: #343a40;
@@ -519,6 +520,62 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+#eventos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.item {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.item h4 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.item span {
+    display: block;
+    margin-bottom: 10px;
+    color: #777;
+}
+
+.item .btn-unirme {
+    background-color: #82EDE1;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.item .btn-unirme:hover {
+    background-color: #32746D;
+}
+
+.txt {
+    margin-bottom: 15px;
+}
+
+
 /*FOOTER*/
 /* Estilos generales */
 /* Estilos para el footer más compacto */
