@@ -10,7 +10,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .container {
@@ -287,7 +287,7 @@ input[type="file"]:focus {
 }
 
 /* Estilo del botón de envío */
-.submit-btn {
+#btnGuardar {
     background-color: #009578;
     color: #fff;
     padding: 10px 20px;
@@ -299,10 +299,7 @@ input[type="file"]:focus {
     margin-top: 10px;
 }
 
-.submit-btn:hover {
-    background-color: #007f63;
-}
-.submit-btn:hover {
+#btnGuardar:hover {
     background-color: #007f63;
 }
 
@@ -581,7 +578,7 @@ input[type="file"]:focus {
 
 .item .btn-unirme {
     background-color: #82EDE1;
-    color: #fff;
+    color: black;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -590,33 +587,40 @@ input[type="file"]:focus {
 }
 .item .btn-unirme:hover {
     background-color: #32746D;
+    color: white;
 }
 .txt {
     margin-bottom: 15px;
 }
+
+.btn-unirme {
+    color: #020202;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+    padding: 8px 28px;
+    display: inline-block;
+    border-radius: 24px;
+    width: 100%;
+    text-align: center;
+}
+
 /*FOOTER*/
 footer {
-    background-color: #000000; 
+    background: linear-gradient(100deg, #06FFDA, #F5FF9A, #FF0073);
     color: #ffffff; 
     padding: 15px 0; 
     text-align: center;
-    border-top: 3px solid #FF0065; 
-    margin-top: 130px;
-}
-
-#FooterActividades {
-    margin-top: 50px;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 10px; 
 }
-
 
 .footer-logo img {
     max-width: 100px; 
@@ -634,7 +638,7 @@ footer {
 }
 
 .footer-links ul li a {
-    color: #ffffff; 
+    color: black; 
     text-decoration: none;
     font-size: 0.9em; 
     transition: color 0.3s; 
@@ -654,7 +658,7 @@ footer {
 
 .footer-social a {
     margin: 0 10px; 
-    color: #ffffff; 
+    color: black; 
     font-size: 20px; 
     transition: transform 0.3s, color 0.3s; 
 }
@@ -664,22 +668,18 @@ footer {
     transform: scale(1.1); 
 }
 
-
-.footer-contact p {
-    margin: 3px 0; 
-    color: #ffffff; 
-    font-size: 0.9em; 
-}
-
 .footer-bottom {
     padding: 5px 0; 
-    background-color: #000000; 
+}
+.footer-bottom:hover {
+    color: #FF0065; 
+    transform: scale(1.1); 
 }
 
 .footer-bottom p {
     margin: 0;
     font-size: 0.8em; 
-    color: #ffffff; 
+    color: black; 
 }
 
 @media (max-width: 768px) {
@@ -695,76 +695,6 @@ footer {
 
     .footer-social {
         margin-top: 10px; 
-    }
-}
-
-.destacados {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: relative;
-}
-
-.item {
-    width: calc(33% - 28px);
-    margin: 16px;
-    padding: 12px 12px 20px;
-    border-radius: 4px;
-    background-color: #F5F5F4;
-    position: relative;
-    top: 0;
-    z-index: 5;
-}
-
-.cont-1550 {
-    max-width: 1550px;
-}
-
-.btn-unirme {
-    color: #020202;
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 700;
-    padding: 8px 28px;
-    display: inline-block;
-    border-radius: 24px;
-    background-color: #FF0065;
-    width: 100%;
-    text-align: center;
-}
-
-.destacados .item .txt h4 {
-    color: #0B2739;
-    font-size: 32px;
-    line-height: 40px;
-    font-weight: 700;
-}
-
-.cont-1550 .destacados .item .txt span {
-    color: #50545B;
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 400;
-}
-
-@media (max-width: 760px) {
-    .cont-1550 .destacados .item {
-        max-width: 445px;
-        width: 100%;
-        margin: 20px 0;
-    }
-}
-
-@media (max-width: 1230px) {
-    .cont-1550 .destacados .item {
-        width: 445px;
-    }
-}
-@media (max-width: 1400px) {
-    .cont-1550 .destacados .item {
-        width: calc(33% - 12px);
-        margin: 16px 8px;
     }
 }
 
