@@ -716,4 +716,8 @@ footer {
     }
 }
 
+.active {
+    font-weight: bold;
+    color: black !important;
+}
 

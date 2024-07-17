@@ -12,12 +12,36 @@ class Header extends HTMLElement {
                 </a>
             </div>
             <div id="items-navbar">
-            <a href="./perfil.html">MI PERFIL</a>
-            <a href="./mis_grupos.html">MIS GRUPOS</a>
+            <a href="./perfil.html" id="perfil-link">MI PERFIL</a>
+            <a href="./mis_grupos.html" id="grupos-link">MIS GRUPOS</a>
+            <a href="./actividades.html" id="actividades-link">ACTIVIDADES</a>
             </div>
         </nav>
 
       `;
+
+      this.setActiveLink();
     }
-  }
+    setActiveLink() {
+      const path = window.location.pathname;
+      const links = {
+        '/templates/perfil.html': 'perfil-link',
+        '/templates/mis_grupos.html': 'grupos-link',
+        '/templates/actividades.html': 'actividades-link'
+      };
+
+      const activeLinkId = links[path];
+      if (activeLinkId) {
+        const activeLink = this.querySelector(`#${activeLinkId}`);
+        if (activeLink) {
+          activeLink.classList.add('active');
+          activeLink.setAttribute('aria-disabled', 'true');
+          activeLink.style.pointerEvents = 'none';
+          activeLink.style.cursor = 'default';
+        }
+      }
+    }
+}
+
   customElements.define('header-component', Header);
+
