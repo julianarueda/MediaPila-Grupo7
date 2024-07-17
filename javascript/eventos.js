@@ -81,11 +81,11 @@ let eventos = []
 
 //Agrego conciertos
 eventos.push(new Concierto("3 personas para ir a ver a Ciro","Movistar Arena","08-08-2024","20:00","4","Ciro y los Persas","Rock","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"))
-eventos.push(new Concierto("Ver a Maria Becerra con 3 chicas","Monumental - River","10-10-2024","19:00","4","Reguetón","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"))
-eventos.push(new Concierto("Ver a Babasónicos","Plaza de la música- Córdoba","08-11-2024","20:30","3","Pop Rock","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"))
+eventos.push(new Concierto("Ver a Maria Becerra con 3 chicas","Monumental - River","10-10-2024","19:00","4","María Becerra","Reguetón","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"))
+eventos.push(new Concierto("Ver a Babasónicos","Plaza de la música- Córdoba","08-11-2024","20:30","3","Babasónicos","Pop Rock","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"))
 eventos.push(new Concierto("Ver a Las Pastillas del Abuelo","Villa Ballester","13-07-2024","18:00","4","Pastillas del Abuelo","Rock","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"))
-eventos.push(new Concierto("Ver a Eric Clapton","Estadio José Amalfitani- cancha Vélez","20-09-2024","18:00","3","Rock","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"))
-eventos.push(new Concierto("Ver Iron Maiden","Estadio Tomás Adolfo Ducó- cancha Huracán","01-12-2024","19:00","4","Metal","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"))
+eventos.push(new Concierto("Ver a Eric Clapton","Estadio José Amalfitani- cancha Vélez","20-09-2024","18:00","3","Eric Clapton","Rock","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"))
+eventos.push(new Concierto("Ver Iron Maiden","Estadio Tomás Adolfo Ducó- cancha Huracán","01-12-2024","19:00","4","Iron Maiden","Metal","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"))
 
 //Agrego deportes
 eventos.push(new Deporte("3 personas para el padel","Complejo deportivo Gonnet","14-07-2024","20:00","4","Deportivo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"))
