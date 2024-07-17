@@ -5,7 +5,7 @@ class Footer extends HTMLElement {
 
     connectedCallback() {
       this.innerHTML = `
-        <footer id="FooterActividades">
+        <footer>
             <div class="footer-container">
                 <div class="footer-links">
                     <ul>

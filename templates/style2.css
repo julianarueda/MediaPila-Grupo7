@@ -1,0 +1,254 @@
+/*NavBar*/
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#barraDeNavegación {
+    background: linear-gradient(100deg, #6fffe9, #dde96f, #f85594);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+#barraDeNavegación .logo a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#items-navbar {
+    display: flex;
+    gap: 30px;
+}
+
+#items-navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+#items-navbar a:hover {
+    color: #ff009d;;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #items-navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.icons{
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    color: #ffd1d1;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar a:hover{
+    color: #ff009d;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="datetime-local"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+
+/*Títulos:h1*/
+
+.titulosComunes {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    padding: 10px 20px;
+    background: linear-gradient(100deg, #06FFDA, #cbf35b, #FF0073);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 3s infinite;
+}
+
+.titulosComunes::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #FF0073;
+    visibility: visible;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.titulosComunes:hover::before {
+    transform: scaleX(1);
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/*FOOTER*/
+footer {
+    background: linear-gradient(100deg, #6fffe9, #dde96f, #f85594);
+    padding: 5px 0px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0px auto;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+
+.footer-links ul li a {
+    color: black; 
+    text-decoration: none;
+    font-size: 0.9em; 
+    transition: color 0.3s; 
+}
+
+.footer-links ul li a:hover {
+    color: #FF0065; 
+}
+
+
+.footer-social {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 10px; 
+}
+
+.footer-social a {
+    margin: 0 10px; 
+    color: black; 
+    font-size: 20px; 
+    transition: transform 0.3s, color 0.3s; 
+}
+
+.footer-social a:hover {
+    color: #FF0065; 
+    transform: scale(1.1); 
+}
+
+.footer-bottom {
+    padding: 5px 0; 
+}
+.footer-bottom:hover {
+    color: #FF0065; 
+    transform: scale(1.1); 
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9em; 
+    color: black; 
+}

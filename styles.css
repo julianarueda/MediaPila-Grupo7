@@ -21,7 +21,7 @@ body {
 }
 
 #barraDeNavegación {
-    background: linear-gradient(100deg, #06FFDA, #F5FF9A, #FF0073);
+    background: linear-gradient(100deg, #6fffe9, #dde96f, #f85594);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px 0;
 }
@@ -624,11 +624,10 @@ input[type="file"]:focus {
 
 /*FOOTER*/
 footer {
-    margin-top: 20px;
-    background: linear-gradient(100deg, #06FFDA, #F5FF9A, #FF0073);
-    color: #ffffff; 
-    padding: 15px 0; 
+    background: linear-gradient(100deg, #6fffe9, #dde96f, #f85594);
+    padding: 5px 0px;
     text-align: center;
+    margin-top: 30px;
 }
 
 .footer-container {
@@ -636,23 +635,13 @@ footer {
     justify-content: space-around;
     flex-wrap: wrap;
     max-width: 100%;
-    margin: 0 auto;
-    padding: 0 10px; 
+    margin: 0px auto;
 }
-
-.footer-logo img {
-    max-width: 100px; 
-}
-
 
 .footer-links ul {
     list-style: none;
     padding: 0;
     margin: 0; 
-}
-
-.footer-links ul li {
-    margin: 5px 0;
 }
 
 .footer-links ul li a {
@@ -696,28 +685,11 @@ footer {
 
 .footer-bottom p {
     margin: 0;
-    font-size: 0.8em; 
+    font-size: 0.9em; 
     color: black; 
-}
-
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-links ul {
-        padding: 0;
-    }
-
-    .footer-social {
-        margin-top: 10px; 
-    }
 }
 
 .active {
     font-weight: bold;
     color: black !important;
 }
-

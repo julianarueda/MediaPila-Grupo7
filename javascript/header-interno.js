@@ -12,9 +12,8 @@ class Header extends HTMLElement {
                 </a>
             </div>
             <div id="items-navbar">
-            <a href="./perfil.html" id="perfil-link">MI PERFIL</a>
-            <a href="./mis_grupos.html" id="grupos-link">MIS GRUPOS</a>
-            <a href="./actividades.html" id="actividades-link">ACTIVIDADES</a>
+              <a href="./mis_grupos.html" id="grupos-link">MIS GRUPOS</a>
+              <a href="./actividades.html" id="actividades-link">ACTIVIDADES</a>
             </div>
         </nav>
 
