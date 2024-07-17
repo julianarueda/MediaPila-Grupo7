@@ -72,7 +72,7 @@ function mostrarDeportes(){
     mostrarEventos(deportes);
 }
 
-function mostrarDomingueandopage(){
+function mostrarDomingueando(){
     const domingueando = eventos.filter(evento => evento instanceof Domingueando);
     mostrarEventos(domingueando);
 }
