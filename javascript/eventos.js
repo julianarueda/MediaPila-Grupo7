@@ -77,3 +77,32 @@ function mostrarDomingueando(){
     mostrarEventos(domingueando);
 }
 
+
+let filtros = {
+    fecha: null,
+    lugar: null,
+    tipo: null
+};
+
+function agregarFiltro(tipo, valor) {
+    filtros[tipo] = valor !== "" ? valor : null;
+    filtrarEventos();
+}
+
+function filtrarEventos() {
+    let eventosFiltrados = eventos;
+
+    if (filtros.fecha) {
+        eventosFiltrados = eventosFiltrados.filter(evento => evento.fecha === filtros.fecha);
+    }
+    if (filtros.lugar) {
+        eventosFiltrados = eventosFiltrados.filter(evento => evento.lugar === filtros.lugar);
+    }
+    if (filtros.tipo) {
+        eventosFiltrados = eventosFiltrados.filter(evento => evento.tipo === filtros.tipo);
+    }
+
+    mostrarEventos(eventosFiltrados);
+}
+
+mostrarEventos(eventos);

@@ -48,8 +48,8 @@ eventos.push(new Deporte("3 para tenis","Predio Agua Potable","13-07-2024","10:0
 eventos.push(new Deporte("4 para turno de hockey","Predio club universitario","16-07-2024","16:00","5","Deportivo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
 eventos.push(new Deporte("1 para ajedrez","Plaza San Martín","11-07-2024","12:00","2","Deportivo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
 eventos.push(new Deporte("3 para correr","El Rosedal de Palermo","15-07-2024","19:00","4","Deportivo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Deporte("Partido de voleibol","Gimnasio Municipal","17-07-2024","17:00","12","Voleibol","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Deporte("Torneo de baloncesto","Cancha Central","18-07-2024","18:00","10","Baloncesto","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Deporte("Partido de voley","Gimnasio Municipal","17-07-2024","17:00","12","Voley","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Deporte("Torneo de basket","Cancha Central","18-07-2024","18:00","10","Basket","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
 eventos.push(new Deporte("Carrera de 5K","Parque del Sol","19-07-2024","08:00","50","Carrera","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
 eventos.push(new Deporte("Sesión de yoga al aire libre","Playa Norte","20-07-2024","07:00","20","Yoga","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
 eventos.push(new Deporte("Clase de Zumba","Centro Cultural","21-07-2024","18:30","30","Zumba","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
@@ -62,10 +62,10 @@ eventos.push(new Deporte("Clase de pilates","Estudio Zen","27-07-2024","11:00","
 eventos.push(new Deporte("Entrenamiento de crossfit","Parque Central","28-07-2024","06:00","15","Crossfit","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
 eventos.push(new Deporte("Clase de escalada","Muro de Escalada","29-07-2024","14:00","8","Escalada","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
 eventos.push(new Deporte("Torneo de golf","Club de Golf","30-07-2024","08:00","4","Golf","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Deporte("Partido de balonmano","Polideportivo Municipal","31-07-2024","12:00","14","Balonmano","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Deporte("Partido de handball","Polideportivo Municipal","31-07-2024","12:00","14","handball","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
 eventos.push(new Deporte("Clase de kickboxing","Gimnasio Fight Club","01-08-2024","18:00","10","Kickboxing","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
 eventos.push(new Deporte("Sesión de meditación guiada","Jardín Botánico","02-08-2024","07:30","20","Meditación","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Deporte("Entrenamiento de fútbol americano","Estadio Nacional","03-08-2024","16:00","22","Fútbol Americano","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Deporte("Entrenamiento de fútbol","Estadio Nacional","03-08-2024","16:00","22","Fútbol","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
 eventos.push(new Deporte("Clase de danza contemporánea","Estudio de Danza","04-08-2024","17:00","10","Danza","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
 eventos.push(new Deporte("Competencia de remo","Lago Azul","05-08-2024","06:00","30","Remo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
 eventos.push(new Deporte("Torneo de ajedrez","Café Literario","06-08-2024","15:00","20","Ajedrez","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
@@ -119,3 +119,5 @@ eventos.push(new Domingueando("Pesca en el embalse","Embalse Río Tercero","12-0
 eventos.push(new Domingueando("Lectura en el museo","Museo de Arte Moderno","13-08-2024","13:00","2","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
 eventos.push(new Domingueando("Ver función de circo","Circo Rodas","14-08-2024","19:00","5","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
 eventos.push(new Domingueando("Ver partido de rugby","Estadio CASI","15-08-2024","17:00","10","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+
+

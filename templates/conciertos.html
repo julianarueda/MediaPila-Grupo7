@@ -15,6 +15,34 @@
         <header-component></header-component>
                
         <h1 class="titulosComunes">Conciertos</h1>
+        <div id="filtros-container">
+            <label for="filtro-fecha">Fecha:</label>
+            <select id="filtro-fecha" onchange="agregarFiltro('fecha', this.value)">
+                <option value="">Seleccionar fecha</option>
+                <option value="2024-07-20">2024-07-20</option>
+                <option value="2024-07-21">2024-07-21</option>
+                <!-- Añade más opciones de fecha según sea necesario -->
+            </select>
+            
+            <label for="filtro-lugar">Lugar:</label>
+            <select id="filtro-lugar" onchange="agregarFiltro('lugar', this.value)">
+                <option value="">Seleccionar lugar</option>
+                <option value="Estadio Nacional">Estadio Nacional</option>
+                <option value="Parque Central">Parque Central</option>
+                <!-- Añade más opciones de lugar según sea necesario -->
+            </select>
+        
+            <label for="filtro-tipo">Tipo:</label>
+            <select id="filtro-tipo" onchange="agregarFiltro('tipo', this.value)">
+                <option value="">Seleccionar tipo</option>
+                <option value="Rock">Rock</option>
+                <option value="Fútbol">Fútbol</option>
+                <option value="Comida">Comida</option>
+                <!-- Añade más opciones de tipo según sea necesario -->
+            </select>
+        </div>
+        <div id="eventos-container"></div>
+
         <div class="cont-1550">
             <div class="destacados" id="eventos-container">
                 <!-- Aquí se mostrarán los eventos dinámicamente -->
