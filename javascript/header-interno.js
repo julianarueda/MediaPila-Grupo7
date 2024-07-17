@@ -13,7 +13,7 @@ class Header extends HTMLElement {
             </div>
             <div id="items-navbar">
             <a href="./perfil.html">MI PERFIL</a>
-            <a href="./misgrupos.html">MIS GRUPOS</a>
+            <a href="./mis_grupos.html">MIS GRUPOS</a>
             </div>
         </nav>
 
