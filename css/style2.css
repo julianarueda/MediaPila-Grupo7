@@ -1,5 +1,11 @@
 /*NavBar*/
 
+* {
+    margin: 0px auto;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -251,4 +257,10 @@ footer {
     margin: 0;
     font-size: 0.9em; 
     color: black; 
+}
+
+.circular-img {
+    width: 75px;
+    height: auto; 
+    border-radius: 50%; 
 }

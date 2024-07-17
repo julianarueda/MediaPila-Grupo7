@@ -16,6 +16,10 @@ class Concierto extends Evento{
         this.tipo = generoMusical
     }
 
+    getTipo(){
+        return ["Rock","Pop","Reggeton"]
+    }
+
 }
 
 class Deporte extends Evento{
@@ -24,12 +28,20 @@ class Deporte extends Evento{
         this.tipo = tipoDeporte
     }
 
+    getTipo(){
+        return ["Futbol"]
+    }
+
 }
 
 class Domingueando extends Evento{
     constructor(titulo, lugar, fecha, horario, cantidadPersonas, tipoComida, link) {
         super(titulo, lugar, fecha, horario, cantidadPersonas, link)
         this.tipo = tipoComida
+    }
+
+    getTipo(){
+        return ["Futbol"]
     }
 
 }

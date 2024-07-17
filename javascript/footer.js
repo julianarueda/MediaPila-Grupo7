@@ -9,8 +9,8 @@ class Footer extends HTMLElement {
             <div class="footer-container">
                 <div class="footer-links">
                     <ul>
-                        <li><a href="#">Sobre Nosotros</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="./sobrenosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="footer-social" >
