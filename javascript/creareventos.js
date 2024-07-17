@@ -1,5 +1,3 @@
-let eventos = []
-
 //Agrego conciertos
 eventos.push(new Concierto("3 personas para ir a ver a Ciro","Movistar Arena","08-08-2024","20:00","4","Ciro y los Persas","Rock","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
 eventos.push(new Concierto("Ver a Maria Becerra con 3 chicas","Monumental - River","10-10-2024","19:00","4","María Becerra","Reguetón","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));

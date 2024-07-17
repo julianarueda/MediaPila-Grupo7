@@ -30,7 +30,7 @@
                         <div class="col-md-6">
                             <div class="mb-3">
                                 <label for="categoria" class="form-label">Categoría del evento</label>
-                                <select class="form-select" id="categoria" required>
+                                <select class="form-select" id="categoria-select"  onchange="updateTipoOptions()" required>
                                     <option value="">Selecciona un tipo de evento</option>
                                     <option value="concierto">Concierto</option>
                                     <option value="deporte">Deporte</option>
@@ -41,7 +41,7 @@
                         <div class="col-md-6">
                             <div class="mb-3">
                                 <label for="tipo" class="form-label">Tipo</label>
-                                <select class="form-select" id="tipo" required>
+                                <select class="form-select" id="tipo-select" required>
                                     <option value="">Selecciona el tipo de evento</option>
                                 </select>
                             </div>
@@ -94,6 +94,7 @@
 
         <footer-component></footer-component>
 
+        <script src="../javascript/eventos.js"></script> 
         <script src="../javascript/footer.js"></script>  
         <script src="../javascript/header-interno.js"></script> 
       

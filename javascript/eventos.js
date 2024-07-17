@@ -16,8 +16,8 @@ class Concierto extends Evento{
         this.tipo = generoMusical
     }
 
-    getTipo(){
-        return ["Rock","Pop","Reggeton"]
+    static getTipo(){
+        return ["Rock", "Reguetón", "Pop Rock", "Metal"]
     }
 
 }
@@ -28,8 +28,8 @@ class Deporte extends Evento{
         this.tipo = tipoDeporte
     }
 
-    getTipo(){
-        return ["Futbol"]
+    static getTipo(){
+        return ["Padel", "Futbol", "Tenis", "Hockey", "Ajedrez", "Correr"]
     }
 
 }
@@ -40,8 +40,8 @@ class Domingueando extends Evento{
         this.tipo = tipoComida
     }
 
-    getTipo(){
-        return ["Futbol"]
+    static getTipo(){
+        return ["Tomar mates", "Cenar fuera", "Pescar", "Leer", "Ver películas", "Ver partidos"]
     }
 
 }
@@ -89,6 +89,42 @@ function mostrarDomingueando(){
     mostrarEventos(domingueando);
 }
 
+function updateTipoOptions(){
+    let categorySelect = document.getElementById('categoria-select');
+    let tipoSelect = document.getElementById('tipo-select');
+
+    // Obtener la categoría seleccionada
+    const selectedCategory = categorySelect.value;
+
+    // Limpiar las opciones anteriores del subcategory-select
+    tipoSelect.innerHTML = '';
+
+    // Obtener las nuevas opciones basadas en la categoría seleccionada
+    let options = [];
+
+    switch(selectedCategory) {
+        case "concierto":
+          options = Concierto.getTipo();
+          break;
+        case "deporte":
+            options = Deporte.getTipo();
+          break;
+        case "domingueando":
+            options = Domingueando.getTipo();
+          break;
+        default:
+          // code block
+      }
+
+
+    // Crear y agregar las nuevas opciones al subcategory-select
+    options.forEach(option => {
+        const optionElement = document.createElement('option');
+        optionElement.value = option.toLowerCase();
+        optionElement.textContent = option;
+        tipoSelect.appendChild(optionElement);
+    });
+}
 
 let filtros = {
     fecha: null,
@@ -116,5 +152,7 @@ function filtrarEventos() {
 
     mostrarEventos(eventosFiltrados);
 }
+
+let eventos = []
 
 mostrarEventos(eventos);
