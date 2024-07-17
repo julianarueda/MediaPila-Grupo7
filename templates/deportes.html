@@ -24,42 +24,24 @@
             <a href="#">MIS GRUPOS</a>
             </div>
         </nav>
-        <div ></div>
-        
-        <h1 class="titulosComunes">Conciertos</h1>
+
+        <h1 class="titulosComunes">Deportes</h1>
         <div class="cont-1550">
             <div class="destacados" id="eventos-container">
                 <!-- Aquí se mostrarán los eventos dinámicamente -->
             </div>
         </div>
-        
-        <footer id="FooterActividades">
-            <div class="footer-container">
-                <div class="footer-links">
-                    <ul>
-                        <li><a href="#">Sobre Nosotros</a></li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="footer-social" >
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 No lo canceles! Todos los derechos reservados.</p>
-            </div>
-        </footer>
+        <footer-component></footer-component>
+        <script src="../javascript/footer.js"></script>  
     
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <script src="script.js"></script>
-        <script src="javascript/eventos.js"></script>
+
+        <script src="../javascript/eventos.js"></script>
 
         <script>
             window.onload = function() {
-                mostrarConciertos();
+                mostrarDeportes();
             };
         </script>
     </body>

@@ -607,6 +607,7 @@ input[type="file"]:focus {
 
 /*FOOTER*/
 footer {
+    margin-top: 20px;
     background: linear-gradient(100deg, #06FFDA, #F5FF9A, #FF0073);
     color: #ffffff; 
     padding: 15px 0; 
