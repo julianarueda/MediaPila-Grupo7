@@ -23,11 +23,11 @@ class Header extends HTMLElement {
       this.setActiveLink();
     }
     setActiveLink() {
-      const path = window.location.pathname;
+      const path = window.location.pathname.split('/').pop();
       const links = {
-        '/templates/perfil.html': 'perfil-link',
-        '/templates/mis_grupos.html': 'grupos-link',
-        '/templates/actividades.html': 'actividades-link'
+        'perfil.html': 'perfil-link',
+        'mis_grupos.html': 'grupos-link',
+        'actividades.html': 'actividades-link'
       };
 
       const activeLinkId = links[path];
