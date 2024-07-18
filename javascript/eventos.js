@@ -17,7 +17,7 @@ class Concierto extends Evento{
     }
 
     static getTipo(){
-        return ["Rock", "Reguetón", "Pop Rock", "Metal"]
+        return ["Rock", "Reguetón", "Pop Rock", "Metal","Alternative Hip-Hop","Grunge","Funk Rock","Hip-Hop","R&B"]
     }
 
 }
@@ -29,7 +29,40 @@ class Deporte extends Evento{
     }
 
     static getTipo(){
-        return ["Padel", "Futbol", "Tenis", "Hockey", "Ajedrez", "Correr"]
+        return [
+            "Deportivo",
+            "Voley",
+            "Basket",
+            "Carrera",
+            "Yoga",
+            "Zumba",
+            "Tenis",
+            "Natación",
+            "Rugby",
+            "Boxeo",
+            "Ciclismo",
+            "Pilates",
+            "Crossfit",
+            "Escalada",
+            "Golf",
+            "Handball",
+            "Kickboxing",
+            "Meditación",
+            "Fútbol",
+            "Danza",
+            "Remo",
+            "Ajedrez",
+            "Cricket",
+            "Judo",
+            "Lucha Libre",
+            "Artes Marciales Mixtas",
+            "Tiro con Arco",
+            "Tai Chi",
+            "Squash",
+            "Stretching",
+            "Defensa Personal",
+            "Esgrima"
+        ];
     }
 
 }
@@ -127,25 +160,33 @@ function updateTipoOptions(){
 }
 
 let filtros = {
-    fecha: null,
-    lugar: null,
     tipo: null
 };
 
-function agregarFiltro(tipo, valor) {
+function agregarFiltro(tipo, valor, selectedCategory) {
     filtros[tipo] = valor !== "" ? valor : null;
-    filtrarEventos();
+
+    let eventosFiltrados = [];
+    
+    switch(selectedCategory) {
+        case "concierto":
+            eventosFiltrados = eventos.filter(evento => evento instanceof Concierto);
+          break;
+        case "deporte":
+            eventosFiltrados = eventos.filter(evento => evento instanceof Deporte);
+          break;
+        case "domingueando":
+            eventosFiltrados = eventos.filter(evento => evento instanceof Domingueando);
+          break;
+        default:
+          // code block
+      }
+
+    filtrarEventos(eventosFiltrados);
 }
 
-function filtrarEventos() {
-    let eventosFiltrados = eventos;
+function filtrarEventos(eventosFiltrados) {
 
-    if (filtros.fecha) {
-        eventosFiltrados = eventosFiltrados.filter(evento => evento.fecha === filtros.fecha);
-    }
-    if (filtros.lugar) {
-        eventosFiltrados = eventosFiltrados.filter(evento => evento.lugar === filtros.lugar);
-    }
     if (filtros.tipo) {
         eventosFiltrados = eventosFiltrados.filter(evento => evento.tipo === filtros.tipo);
     }

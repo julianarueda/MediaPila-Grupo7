@@ -40,12 +40,6 @@ eventos.push(new Concierto("Asistir al concierto de Imagine Dragons","Estadio Mo
 eventos.push(new Concierto("Ir al concierto de Twenty One Pilots","Amsterdam Arena","15-09-2024","20:00","4","Twenty One Pilots","Alternative Hip-Hop","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
 
 //Agrego deportes
-eventos.push(new Deporte("3 personas para el padel","Complejo deportivo Gonnet","14-07-2024","20:00","4","Deportivo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Deporte("9 para jugar al futbol","Cancha Predio Norte","21-07-2024","21:00","10","Deportivo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Deporte("3 para tenis","Predio Agua Potable","13-07-2024","10:00","4","Deportivo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Deporte("4 para turno de hockey","Predio club universitario","16-07-2024","16:00","5","Deportivo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Deporte("1 para ajedrez","Plaza San Martín","11-07-2024","12:00","2","Deportivo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Deporte("3 para correr","El Rosedal de Palermo","15-07-2024","19:00","4","Deportivo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
 eventos.push(new Deporte("Partido de voley","Gimnasio Municipal","17-07-2024","17:00","12","Voley","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
 eventos.push(new Deporte("Torneo de basket","Cancha Central","18-07-2024","18:00","10","Basket","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
 eventos.push(new Deporte("Carrera de 5K","Parque del Sol","19-07-2024","08:00","50","Carrera","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
@@ -81,41 +75,39 @@ eventos.push(new Deporte("Torneo de esgrima","Polideportivo Municipal","16-08-20
 
 
 //Agrego domingueando
-eventos.push(new Domingueando("3 personas para tomar mates","Plaza Moreno","14-07-2024","15:00","4","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("5 para ir a cenar a un tenedor libre","Parrilla El Retiro","14-07-2024","21:00","5","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("2 para ir a pescar","Laguna la Salada","21-07-2024","06:00","3","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("1 para ir al cine a ver Intensamente 2","Cinema Rocha","14-07-2024","18:00","2","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("3 para hacer club de lectura","Café La Callecita","28-07-2024","16:00","4","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("4 para ver final de Copa América","Antares Cervecería","14-07-2024","20:30","5","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("Tomar mate en el parque","Parque Rivadavia","17-07-2024","16:00","4","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("Cena en restaurante italiano","Trattoria Napoli","18-07-2024","20:00","5","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("Pesca en el río","Río Paraná","19-07-2024","06:00","3","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("Club de lectura en la biblioteca","Biblioteca Nacional","20-07-2024","14:00","8","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("Ver película en cine independiente","Cine Arteplex","21-07-2024","18:00","2","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("Ver partido de fútbol","Estadio Monumental","22-07-2024","19:00","10","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("Tomar mate en la plaza","Plaza Francia","23-07-2024","15:00","6","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("Cena en parrilla","Parrilla Los Amigos","24-07-2024","21:00","4","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("Pesca en el lago","Lago del Bosque","25-07-2024","07:00","5","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("Lectura en el café","Café Literario","26-07-2024","17:00","3","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("Ver documental en el centro cultural","Centro Cultural Recoleta","27-07-2024","19:00","4","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("Ver final de torneo de tenis","Club de Tenis","28-07-2024","16:00","8","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("Tomar mate en el jardín botánico","Jardín Botánico","29-07-2024","14:00","5","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("Cena en restaurante de sushi","Sushi Club","30-07-2024","20:00","4","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("Pesca en la laguna","Laguna de Chascomús","31-07-2024","05:00","4","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("Lectura en el parque","Parque Centenario","01-08-2024","11:00","6","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("Ver película en cine al aire libre","Parque de la Costa","02-08-2024","20:30","3","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("Ver partido de básquet","Estadio Obras","03-08-2024","18:00","7","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("Tomar mate en la playa","Playa Grande","04-08-2024","10:00","6","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("Cena en restaurante mexicano","La Cantina","05-08-2024","21:00","5","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("Pesca en el arroyo","Arroyo Saladillo","06-08-2024","06:00","3","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("Lectura en la terraza","Terraza del Centro Cultural","07-08-2024","16:00","4","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("Ver musical en teatro","Teatro Gran Rex","08-08-2024","20:00","6","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("Ver partido de tenis","Estadio Parque Roca","09-08-2024","15:00","8","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("Tomar mate en el campo","Estancia La Esperanza","10-08-2024","09:00","4","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("Cena en restaurante vegetariano","Green Eats","11-08-2024","20:00","4","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("Pesca en el embalse","Embalse Río Tercero","12-08-2024","07:00","3","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("Lectura en el museo","Museo de Arte Moderno","13-08-2024","13:00","2","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("Ver función de circo","Circo Rodas","14-08-2024","19:00","5","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-eventos.push(new Domingueando("Ver partido de rugby","Estadio CASI","15-08-2024","17:00","10","Recreativo","https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
-
-
+eventos.push(new Domingueando("3 personas para tomar mates", "Plaza Moreno", "14-07-2024", "15:00", "4", "Tomar mates", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("5 para ir a cenar a un tenedor libre", "Parrilla El Retiro", "14-07-2024", "21:00", "5", "Cenar fuera", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("2 para ir a pescar", "Laguna la Salada", "21-07-2024", "06:00", "3", "Pescar", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("1 para ir al cine a ver Intensamente 2", "Cinema Rocha", "14-07-2024", "18:00", "2", "Ver películas", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("3 para hacer club de lectura", "Café La Callecita", "28-07-2024", "16:00", "4", "Leer", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("4 para ver final de Copa América", "Antares Cervecería", "14-07-2024", "20:30", "5", "Ver partidos", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("Tomar mate en el parque", "Parque Rivadavia", "17-07-2024", "16:00", "4", "Tomar mates", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("Cena en restaurante italiano", "Trattoria Napoli", "18-07-2024", "20:00", "5", "Cenar fuera", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("Pesca en el río", "Río Paraná", "19-07-2024", "06:00", "3", "Pescar", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("Club de lectura en la biblioteca", "Biblioteca Nacional", "20-07-2024", "14:00", "8", "Leer", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("Ver película en cine independiente", "Cine Arteplex", "21-07-2024", "18:00", "2", "Ver películas", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("Ver partido de fútbol", "Estadio Monumental", "22-07-2024", "19:00", "10", "Ver partidos", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("Tomar mate en la plaza", "Plaza Francia", "23-07-2024", "15:00", "6", "Tomar mates", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("Cena en parrilla", "Parrilla Los Amigos", "24-07-2024", "21:00", "4", "Cenar fuera", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("Pesca en el lago", "Lago del Bosque", "25-07-2024", "07:00", "5", "Pescar", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("Lectura en el café", "Café Literario", "26-07-2024", "17:00", "3", "Leer", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("Ver documental en el centro cultural", "Centro Cultural Recoleta", "27-07-2024", "19:00", "4", "Ver películas", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("Ver final de torneo de tenis", "Club de Tenis", "28-07-2024", "16:00", "8", "Ver partidos", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("Tomar mate en el jardín botánico", "Jardín Botánico", "29-07-2024", "14:00", "5", "Tomar mates", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("Cena en restaurante de sushi", "Sushi Club", "30-07-2024", "20:00", "4", "Cenar fuera", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("Pesca en la laguna", "Laguna de Chascomús", "31-07-2024", "05:00", "4", "Pescar", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("Lectura en el parque", "Parque Centenario", "01-08-2024", "11:00", "6", "Leer", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("Ver película en cine al aire libre", "Parque de la Costa", "02-08-2024", "20:30", "3", "Ver películas", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("Ver partido de básquet", "Estadio Obras", "03-08-2024", "18:00", "7", "Ver partidos", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("Tomar mate en la playa", "Playa Grande", "04-08-2024", "10:00", "6", "Tomar mates", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("Cena en restaurante mexicano", "La Cantina", "05-08-2024", "21:00", "5", "Cenar fuera", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("Pesca en el arroyo", "Arroyo Saladillo", "06-08-2024", "06:00", "3", "Pescar", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("Lectura en la terraza", "Terraza del Centro Cultural", "07-08-2024", "16:00", "4", "Leer", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("Ver musical en teatro", "Teatro Gran Rex", "08-08-2024", "20:00", "6", "Ver películas", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("Ver partido de tenis", "Estadio Parque Roca", "09-08-2024", "15:00", "8", "Ver partidos", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("Tomar mate en el campo", "Estancia La Esperanza", "10-08-2024", "09:00", "4", "Tomar mates", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("Cena en restaurante vegetariano", "Green Eats", "11-08-2024", "20:00", "4", "Cenar fuera", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("Pesca en el embalse", "Embalse Río Tercero", "12-08-2024", "07:00", "3", "Pescar", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("Lectura en el museo", "Museo de Arte Moderno", "13-08-2024", "13:00", "2", "Leer", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("Ver función de circo", "Circo Rodas", "14-08-2024", "19:00", "5", "Ver películas", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));
+eventos.push(new Domingueando("Ver partido de rugby", "Estadio CASI", "15-08-2024", "17:00", "10", "Ver partidos", "https://chat.whatsapp.com/Gh2UhTbBNig0BrjrUJTCnj"));

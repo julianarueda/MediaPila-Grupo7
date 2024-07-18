@@ -15,6 +15,12 @@
         <header-component></header-component>
 
         <h1 class="titulosComunes">Deportes</h1>
+
+        <div class="text-center">
+            <h2 class="Subtitulo">Seleccioná tu deporte:</h2>
+            <select id="filtro-tipo" onchange="agregarFiltro('tipo', this.value,'deporte')"></select>
+        </div>
+
         <div class="cont-1550">
             <div class="destacados" id="eventos-container">
                 <!-- Aquí se mostrarán los eventos dinámicamente -->
@@ -35,6 +41,24 @@
             window.onload = function() {
                 mostrarDeportes();
             };
+
+            const selectElement = document.getElementById('filtro-tipo');
+            const tipos = Deporte.getTipo();
+
+            // Agregar la opción predeterminada
+            const defaultOption = document.createElement('option');
+            defaultOption.value = '';
+            defaultOption.textContent = 'Todos los deportes';
+            defaultOption.selected = true;
+            selectElement.appendChild(defaultOption);
+
+            // Agregar las opciones devueltas por getTipo
+            tipos.forEach(tipo => {
+                const optionElement = document.createElement('option');
+                optionElement.value = tipo;
+                optionElement.textContent = tipo;
+                selectElement.appendChild(optionElement);
+            });
         </script>
     </body>
 
