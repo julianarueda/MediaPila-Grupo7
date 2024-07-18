@@ -30,7 +30,6 @@ class Deporte extends Evento{
 
     static getTipo(){
         return [
-            "Deportivo",
             "Voley",
             "Basket",
             "Carrera",
