@@ -1,3 +1,7 @@
+// Listado de eventos de la aplicación
+let eventos = []
+
+//Creación de las clases usadas en la app
 class Evento {
     constructor(titulo, lugar, fecha, horario, cantidadPersonas, link) {
         this.titulo = titulo
@@ -30,37 +34,10 @@ class Deporte extends Evento{
 
     static getTipo(){
         return [
-            "Voley",
-            "Basket",
-            "Carrera",
-            "Yoga",
-            "Zumba",
-            "Tenis",
-            "Natación",
-            "Rugby",
-            "Boxeo",
-            "Ciclismo",
-            "Pilates",
-            "Crossfit",
-            "Escalada",
-            "Golf",
-            "Handball",
-            "Kickboxing",
-            "Meditación",
-            "Fútbol",
-            "Danza",
-            "Remo",
-            "Ajedrez",
-            "Cricket",
-            "Judo",
-            "Lucha Libre",
-            "Artes Marciales Mixtas",
-            "Tiro con Arco",
-            "Tai Chi",
-            "Squash",
-            "Stretching",
-            "Defensa Personal",
-            "Esgrima"
+            "Voley","Basket","Carrera","Yoga","Zumba","Tenis","Natación","Rugby","Boxeo","Ciclismo",
+            "Pilates","Crossfit","Escalada","Golf","Handball","Kickboxing","Meditación","Fútbol","Danza",
+            "Remo","Ajedrez","Cricket","Judo","Lucha Libre","Artes Marciales Mixtas","Tiro con Arco",
+            "Tai Chi","Squash","Stretching","Defensa Personal","Esgrima"
         ];
     }
 
@@ -78,6 +55,8 @@ class Domingueando extends Evento{
 
 }
 
+//Carga los eventos en la página
+// Recibe los eventos ya filtrados
 function mostrarEventos(eventosAMostrar) {
     const eventosContainer = document.getElementById('eventos-container');
     // Limpiar el contenedor antes de agregar los eventos
@@ -106,6 +85,7 @@ function mostrarEventos(eventosAMostrar) {
 
 }
 
+//Funciones que me filtra el listado completo de eventos, según categoría
 function mostrarConciertos(){
     const conciertos = eventos.filter(evento => evento instanceof Concierto);
     mostrarEventos(conciertos);
@@ -121,6 +101,8 @@ function mostrarDomingueando(){
     mostrarEventos(domingueando);
 }
 
+//Función para actualizar en el formulario de creación de grupos las opciones del select tipo
+//Esto sucede porque de acuerdo al tipo de categoría elegida del evento, el tipo cambia.
 function updateTipoOptions(){
     let categorySelect = document.getElementById('categoria-select');
     let tipoSelect = document.getElementById('tipo-select');
@@ -155,82 +137,5 @@ function updateTipoOptions(){
         optionElement.value = option.toLowerCase();
         optionElement.textContent = option;
         tipoSelect.appendChild(optionElement);
-    });
-}
-
-let filtros = {
-    tipo: null
-};
-
-function agregarFiltro(tipo, valor, selectedCategory) {
-    filtros[tipo] = valor !== "" ? valor : null;
-
-    let eventosFiltrados = [];
-    
-    switch(selectedCategory) {
-        case "concierto":
-            eventosFiltrados = eventos.filter(evento => evento instanceof Concierto);
-          break;
-        case "deporte":
-            eventosFiltrados = eventos.filter(evento => evento instanceof Deporte);
-          break;
-        case "domingueando":
-            eventosFiltrados = eventos.filter(evento => evento instanceof Domingueando);
-          break;
-        default:
-          // code block
-      }
-
-    filtrarEventos(eventosFiltrados);
-}
-
-function filtrarEventos(eventosFiltrados) {
-
-    if (filtros.tipo) {
-        eventosFiltrados = eventosFiltrados.filter(evento => evento.tipo === filtros.tipo);
-    }
-
-    mostrarEventos(eventosFiltrados);
-}
-
-let eventos = []
-
-mostrarEventos(eventos);
-
-function agregarTipos(tipoDeEvento){
-    const selectElement = document.getElementById('filtro-tipo');
-
-    let tipos = [];
-    let textContent = "";
-
-    switch(tipoDeEvento) {
-        case "concierto":
-            tipos = Concierto.getTipo();
-            textContent = "Todos los géneros musicales";
-          break;
-        case "deporte":
-            tipos = Deporte.getTipo();
-            textContent = "Todos los deportes";
-          break;
-        case "domingueando":
-            tipos = Domingueando.getTipo();
-            textContent = "Todos los intereses";
-          break;
-        default:
-          // code block
-      }
-    // Agregar la opción predeterminada
-    const defaultOption = document.createElement('option');
-    defaultOption.value = '';
-    defaultOption.textContent = textContent;
-    defaultOption.selected = true;
-    selectElement.appendChild(defaultOption);
-
-    // Agregar las opciones devueltas por getTipo
-    tipos.forEach(tipo => {
-        const optionElement = document.createElement('option');
-        optionElement.value = tipo;
-        optionElement.textContent = tipo;
-        selectElement.appendChild(optionElement);
     });
 }
