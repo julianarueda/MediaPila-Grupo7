@@ -197,3 +197,41 @@ function filtrarEventos(eventosFiltrados) {
 let eventos = []
 
 mostrarEventos(eventos);
+
+function agregarTipos(tipoDeEvento){
+    const selectElement = document.getElementById('filtro-tipo');
+
+    let tipos = [];
+    let textContent = "";
+
+    switch(tipoDeEvento) {
+        case "concierto":
+            tipos = Concierto.getTipo();
+            textContent = "Todos los géneros musicales";
+          break;
+        case "deporte":
+            tipos = Deporte.getTipo();
+            textContent = "Todos los deportes";
+          break;
+        case "domingueando":
+            tipos = Domingueando.getTipo();
+            textContent = "Todos los intereses";
+          break;
+        default:
+          // code block
+      }
+    // Agregar la opción predeterminada
+    const defaultOption = document.createElement('option');
+    defaultOption.value = '';
+    defaultOption.textContent = textContent;
+    defaultOption.selected = true;
+    selectElement.appendChild(defaultOption);
+
+    // Agregar las opciones devueltas por getTipo
+    tipos.forEach(tipo => {
+        const optionElement = document.createElement('option');
+        optionElement.value = tipo;
+        optionElement.textContent = tipo;
+        selectElement.appendChild(optionElement);
+    });
+}

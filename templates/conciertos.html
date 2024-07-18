@@ -45,24 +45,7 @@
             window.onload = function() {
                 mostrarConciertos();
 
-                const selectElement = document.getElementById('filtro-tipo');
-                const tipos = Concierto.getTipo();
-
-                // Agregar la opción predeterminada
-                const defaultOption = document.createElement('option');
-                defaultOption.value = '';
-                defaultOption.textContent = 'Todos los géneros musicales';
-                defaultOption.selected = true;
-                selectElement.appendChild(defaultOption);
-
-                // Agregar las opciones devueltas por getTipo
-                tipos.forEach(tipo => {
-                    const optionElement = document.createElement('option');
-                    optionElement.value = tipo;
-                    optionElement.textContent = tipo;
-                    selectElement.appendChild(optionElement);
-                });
-
+                agregarTipos("concierto");
             };
         </script>
     </body>
