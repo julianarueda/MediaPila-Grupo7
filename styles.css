@@ -693,3 +693,45 @@ footer {
     font-weight: bold;
     color: black !important;
 }
+
+
+.text-center {
+    text-align: center;
+}
+
+.Subtitulo {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #FF0065;
+}
+
+#filtro-tipo {
+    width: 17%;
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    display: block;
+    text-align-last: center;
+}
+
+#filtro-tipo:focus {
+    border-color: #ff0095;
+    box-shadow: 0 0 5px rgba(223, 37, 198, 0.5);
+}
+
+#filtro-tipo option {
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+}
