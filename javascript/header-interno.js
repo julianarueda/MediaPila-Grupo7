@@ -7,7 +7,7 @@ class Header extends HTMLElement {
       this.innerHTML = `
         <nav class="navbar navbar-expand-lg" id="barraDeNavegación">
             <div class="logo">
-                <a href="D:/usuarios/alumno/documentos/GitHub/MediaPila-Grupo7/templates/actividades.html">
+                <a href="../">
                   <img class="circular-img" src="../img/Logo.png" alt="Logo">
                 </a>
             </div>
