@@ -7,7 +7,7 @@ class Header extends HTMLElement {
       this.innerHTML = `
         <nav class="navbar navbar-expand-lg" id="barraDeNavegación">
             <div class="logo">
-                <a href="../">
+                <a href="./actividades.html">
                   <img class="circular-img" src="../img/Logo.png" alt="Logo">
                 </a>
             </div>
